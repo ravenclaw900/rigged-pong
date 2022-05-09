@@ -37,7 +37,7 @@ async fn main() {
         );
         circle_pos.0 += circle_vel.0;
         circle_pos.1 += circle_vel.1;
-        if circle_vel.0 < 3.0 {
+        if circle_vel.0.abs() < 20.0 {
             if circle_vel.0 > 0.0 {
                 circle_vel.0 += 0.005;
             } else {
